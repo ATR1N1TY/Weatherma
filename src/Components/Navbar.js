@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="">
-      <h1 className=" text-center text-4xl font-bold m-4 drop-shadow-sm">
-        ⚡Weatherma
+    <nav className="text-center text-4xl font-light p-4 text-gray-100 ">
+      <h1 className="drop-shadow-sm ">
+        <span className=" text-yellow-400">⚡</span>Weatherma
       </h1>
     </nav>
   );

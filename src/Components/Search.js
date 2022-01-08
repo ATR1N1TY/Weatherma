@@ -5,7 +5,7 @@ const Search = () => {
   const { callBack } = useContext(dataContext);
 
   return (
-    <div className="Search w-11/12 rounded-full bg-gray-900 h-16 flex justify-center align-middle p-5 m-4">
+    <div className="Search w-11/12 rounded-full bg-gray-900 h-16 flex justify-center align-middle p-5 m-4 glass">
       <form
         className=" outline-none bg-none bg-transparent w-full h-full"
         onSubmit={(e) => {

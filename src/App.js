@@ -1,26 +1,27 @@
+//importing context from DataContext to share data accross App
 import { useContext } from "react";
-import "./App.css";
-import Navbar from "./Components/Navbar";
-import SearchPage from "./Pages/SearchPage";
 import { dataContext, DataContextProvider } from "./States/DataContext";
 
+//components
+import Navbar from "./Components/Navbar";
+import SearchPage from "./Containers/SearchPage";
+import ResultsPage from "./Containers/ResultsPage";
+
+//well, this is CSS
+import "./App.css";
+
 function App() {
+  const { bgLink } = useContext(dataContext);
   return (
-    <div className="App">
-      <DataContextProvider>
-        {/* background: sets searched city bacground day or night */}
-
-        {/* navbar: Weatherma */}
-        <Navbar />
-
-        {/* search city */}
-        <SearchPage />
-
-        {/* general current weather: Location, temperature, weatherIcon, weatherText */}
-        {/* forecast for next 12 hours */}
-        {/* details about current weather: Humidity, wind speed, Visibility, Pressure */}
-        {/* forecast for next 5 days */}
-      </DataContextProvider>
+    <div
+      className="App 2xl:w-screen 2xl:h-screen"
+      style={{
+        background: `url(${bgLink})`,
+      }}
+    >
+      <Navbar /> {/* navbar: Weatherma */}
+      <SearchPage /> {/* search city */}
+      <ResultsPage /> {/* results can be found here */}
     </div>
   );
 }
