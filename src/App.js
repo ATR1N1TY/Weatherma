@@ -1,6 +1,6 @@
 //importing context from DataContext to share data accross App
 import { useContext } from "react";
-import { dataContext, DataContextProvider } from "./States/DataContext";
+import { dataContext } from "./States/DataContext";
 
 //components
 import Navbar from "./Components/Navbar";

@@ -1,11 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { dataContext } from "../States/DataContext";
 
 const WeatherOverview = () => {
   const {
     countryName,
     currentConditions: { WeatherText, Temperature },
-    forecast5Days,
+    // forecast5Days,
   } = useContext(dataContext);
 
   return (
