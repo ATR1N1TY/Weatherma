@@ -42,6 +42,8 @@ body {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  /* background: #e0e0e0; */
+  /* box-shadow: 5px 5px 3px #d0d0d023, -5px -5px 3px #f0f0f025; */
 }
 
 /* width */
